@@ -13,7 +13,7 @@ import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
 @RequiredArgsConstructor
 public class ManualConfiguration {
 
-    private final ConcurrentKafkaListenerContainerFactory concurrentKafkaListenerContainerFactory;
+    private final ConcurrentKafkaListenerContainerFactory<String, Object> concurrentKafkaListenerContainerFactory;
 
     @PostConstruct
     void setup() {
@@ -21,3 +21,4 @@ public class ManualConfiguration {
     }
 
 }
+

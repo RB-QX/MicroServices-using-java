@@ -13,7 +13,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 @RequiredArgsConstructor
 public class ManualConfiguration {
 
-    private final KafkaTemplate kafkaTemplate;
+    private final KafkaTemplate<String, Object> kafkaTemplate;
 
     @PostConstruct
     void setup() {
